@@ -38,7 +38,7 @@ const procedure = [
     title: "Measure the ingredients",
     description:
       "Measure castor oil, distilled water, glycerol, and ethanol according to the quantities used in the experiment.",
-    video: "/videos/vid-01.mp4",
+    video: `${BASE_URL}videos/vid-01.mp4`,
   },
   {
     number: "02",
@@ -86,12 +86,12 @@ const procedure = [
 
 const galleryPhotos = [
   {
-    src: "/images/img-1.jpeg",
+    src: `${BASE_URL}images/img-1.jpeg`,
     title: "Our Experiment — Photo 1",
     tag: "LAB MOMENT 01",
   },
   {
-    src: "/images/img-2.jpeg",
+    src: `${BASE_URL}images/img-2.jpeg`,
     title: "Our Experiment — Photo 2",
     tag: "LAB MOMENT 02",
   },
@@ -283,7 +283,7 @@ function App() {
                 aria-hidden="true"
               >
                 <source
-                  src="/videos/mosquito-lab.mp4"
+                  src={`${BASE_URL}videos/mosquito-lab.mp4`}
                   type="video/mp4"
                 />
               </video>
@@ -570,7 +570,7 @@ function App() {
                     <h3>Process Flowchart</h3>
 
                     <img
-                      src="/images/diagram-1.png"
+                      src={`${BASE_URL}images/diagram-1.png`}
                       alt="Black-and-white flowchart showing glycerol, distilled water, castor oil and an alcohol ingredient leading to mixing and subsequent processing"
                       loading="lazy"
                     />
@@ -588,7 +588,7 @@ function App() {
                     <h3>Illustrated Process</h3>
 
                     <img
-                      src="/images/diagram-2.png"
+                      src={`${BASE_URL}images/diagram-2.png`}
                       alt="Illustrated process diagram showing ingredient inputs, mixing, heating and the intended formulation"
                       loading="lazy"
                     />
